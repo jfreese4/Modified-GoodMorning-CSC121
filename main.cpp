@@ -51,13 +51,13 @@ int displayMenu()
     cout << "4. German" << endl;
     cout << "5. Hebrew" << endl;
     cout << "6. End the Program" << endl;
-    cout << "Enter your selection [1 - 5]: ";
+    cout << "Enter your selection [1 - 6]: ";
 
     // Validate the selection
-    while (!(cin >> answer) || !(answer >= 1 && answer <= 5))
+    while (!(cin >> answer) || !(answer >= 1 && answer <= 6))
     {
         //cout << '\a';   // alert sound, if you want
-        cout << "Invalid selection, please select [1 - 5]: ";
+        cout << "Invalid selection, please select [1 - 6]: ";
         cin.clear();   // [Re]sets the error state to working state.
         cin.ignore(100, '\n'); // ignores 100 char or a new line
     }
